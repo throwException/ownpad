@@ -37,14 +37,7 @@
             $('#app-content #controls').addClass('hidden');
 
             $('#ownpad').load(function(){
-                var iframe = $('#ownpad').contents();
-                if ($('#fileList').length) {
-                    iframe.find('#ownpad_close').click(function() {
-                        self.hide();
-                    });
-                } else {
-                    iframe.find("#ownpad_close").addClass('hidden');
-                }
+                self.hide();
             });
         },
 
